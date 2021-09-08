@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% if user and user.age > 10 %}
+        hello{{user.username}}
+        <p>your age is {{user.age}}</p>
+        <p>your sex is {{user.sex}}</p>
+    {% else %}
+        <p>out</p>
+    {% endif %}
+</body>
+</html>
